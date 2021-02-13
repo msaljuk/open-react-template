@@ -1,16 +1,33 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
+import React from "react";
+import { Link } from "react-router-dom";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Image from "../elements/Image";
+
+// needfinding deliverables
+import needfindingSlidesPDF from "../../assets/assignments/needfindingslides.pdf";
+import needfindingSlidesPPT from "../../assets/assignments/needfindingslides.pptx";
+
+// experience prototype deliverables
+import experienceprototypeSlidesPDF from "../../assets/assignments/experienceprototypeslides.pdf";
+import experienceprototypeSlidesPPT from "../../assets/assignments/experienceprototypeslides.pptx";
+
+// concept video deliverables
+import conceptVideo from "../../assets/assignments/conceptvideo.mp4";
+
+// low-fi prototype deliverables
+import lowfiSlidesPDF from "../../assets/assignments/lowfislides.pdf";
+import lowfiSlidesPPT from "../../assets/assignments/lowfislides.pptx";
+import lowfiReport from "../../assets/assignments/lowfireport.pdf";
 
 const propTypes = {
-  ...SectionTilesProps.types
-}
+  ...SectionTilesProps.types,
+};
 
 const defaultProps = {
-  ...SectionTilesProps.defaults
-}
+  ...SectionTilesProps.defaults,
+};
 const FeaturesTiles = ({
   className,
   topOuterDivider,
@@ -22,104 +39,142 @@ const FeaturesTiles = ({
   pushLeft,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-0',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-tiles-inner section-inner pt-0",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left'
+    "tiles-wrap center-content",
+    pushLeft && "push-left"
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: "Our Process",
+    paragraph:
+      "Learn more about our journey to empower workers within the service industry towards more economically and environmentally sustainable lives",
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section id={"process"} {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-01.svg")}
                       alt="Features tile icon 01"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Needfinding</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    First round of needfinding. Involved conducting interviews
+                    and discovering interesing insights.
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <Link
+                      to={needfindingSlidesPDF}
+                      target="_blank"
+                      download
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Slides (PDF)
+                    </Link>{" "}
+                    <Link
+                      to={needfindingSlidesPPT}
+                      target={window}
+                      download
+                      className="button button-wide-mobile button-sm"
+                    >
+                      Slides (PPT)
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-02.svg")}
                       alt="Features tile icon 02"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Experience Prototypes</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Crafted POVs and “How Might We”s to frame problem and ran
+                    experience prototypes for top 3 solutions.
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <Link
+                      target="_blank"
+                      download
+                      to={experienceprototypeSlidesPDF}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Slides (PDF)
+                    </Link>{" "}
+                    <Link
+                      className="button button-wide-mobile button-sm"
+                      target={window}
+                      download
+                      to={experienceprototypeSlidesPPT}
+                    >
+                      Slides (PPT)
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-03.svg")}
                       alt="Features tile icon 03"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Website</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    We built a website to track our journey as we developed
+                    WageBase. You're on it now!
+                  </p>
                 </div>
               </div>
             </div>
@@ -129,73 +184,116 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-04.svg")}
                       alt="Features tile icon 04"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Concept Video</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Produced a concept video for our idea and the main tasks it
+                    will help accomplish
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <Link
+                      target={window}
+                      download
+                      to={conceptVideo}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Download Video
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-05.svg")}
                       alt="Features tile icon 05"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Low-fi Prototype and Test</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Selected an interface, made a low-fi prototype and tested
+                    the prototype with participants to observe usability.
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <Link
+                      target={window}
+                      download
+                      to={lowfiSlidesPDF}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Slides (PDF)
+                    </Link>{" "}
+                    <Link
+                      className="button button-wide-mobile button-sm"
+                      target={window}
+                      download
+                      to={lowfiSlidesPPT}
+                    >
+                      Slides (PPT)
+                    </Link>
+                    <div style={{ marginTop: "5px" }}></div>
+                    <Link
+                      target={window}
+                      download
+                      to={lowfiReport}
+                      className="button button-dark button-wide-mobile button-sm"
+                    >
+                      Report (PDF)
+                    </Link>{" "}
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-06.svg")}
                       alt="Features tile icon 06"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Med-fi Prototype</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Revised low-fi prototype and built a medium-fidelity version
+                    on Figma. <br /> (In Process)
+                  </p>
+                  <div style={{ marginTop: "20px" }}></div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 FeaturesTiles.propTypes = propTypes;
 FeaturesTiles.defaultProps = defaultProps;
