@@ -282,9 +282,44 @@ const FeaturesTiles = ({
                   <h4 className="mt-0 mb-8">Med-fi Prototype</h4>
                   <p className="m-0 text-sm">
                     Revised low-fi prototype and built a medium-fidelity version
-                    on Figma. <br /> (In Process)
+                    of the prototype on Figma. <br />
                   </p>
-                  <div style={{ marginTop: "20px" }}></div>
+                  <div style={{ marginTop: "20px" }}>
+                    <a
+                      target={window}
+                      href={
+                        "https://www.figma.com/proto/eAv4HLpIQ71M41yw0tIEKb/WageBase?node-id=4%3A36&scaling=scale-down-width"
+                      }
+                      className="button button-secondary button-wide-mobile button-sm"
+                    >
+                      Figma Prototype
+                    </a>{" "}
+                    <Link
+                      className="button button-dark button-wide-mobile button-sm"
+                      target={window}
+                      download
+                      to={lowfiSlidesPPT}
+                    >
+                      README
+                    </Link>
+                    <div style={{ marginTop: "5px" }}></div>
+                    <Link
+                      target={window}
+                      download
+                      to={lowfiReport}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Slides (PDF)
+                    </Link>{" "}
+                    <Link
+                      target={window}
+                      download
+                      to={lowfiReport}
+                      className="button button-wide-mobile button-sm"
+                    >
+                      Slides (PPT)
+                    </Link>{" "}
+                  </div>
                 </div>
               </div>
             </div>
