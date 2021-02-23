@@ -21,6 +21,11 @@ import lowfiSlidesPDF from "../../assets/assignments/lowfislides.pdf";
 import lowfiSlidesPPT from "../../assets/assignments/lowfislides.pptx";
 import lowfiReport from "../../assets/assignments/lowfireport.pdf";
 
+// med-fi prototype deliverables
+import medfiSlidesPDF from "../../assets/assignments/medfiSlides.pdf";
+import medfiSlidesPPT from "../../assets/assignments/medfiSlides.pptx";
+import medfiREADME from "../../assets/assignments/medfiREADME.pdf";
+
 const propTypes = {
   ...SectionTilesProps.types,
 };
@@ -93,15 +98,13 @@ const FeaturesTiles = ({
                     <Link
                       to={needfindingSlidesPDF}
                       target="_blank"
-                      download
                       className="button button-primary button-wide-mobile button-sm"
                     >
                       Slides (PDF)
                     </Link>{" "}
                     <Link
                       to={needfindingSlidesPPT}
-                      target={window}
-                      download
+                      target={_blank}
                       className="button button-wide-mobile button-sm"
                     >
                       Slides (PPT)
@@ -135,7 +138,6 @@ const FeaturesTiles = ({
                   <div style={{ marginTop: "20px" }}>
                     <Link
                       target="_blank"
-                      download
                       to={experienceprototypeSlidesPDF}
                       className="button button-primary button-wide-mobile button-sm"
                     >
@@ -143,8 +145,7 @@ const FeaturesTiles = ({
                     </Link>{" "}
                     <Link
                       className="button button-wide-mobile button-sm"
-                      target={window}
-                      download
+                      target={_blank}
                       to={experienceprototypeSlidesPPT}
                     >
                       Slides (PPT)
@@ -199,7 +200,7 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <Link
-                      target={window}
+                      target={_blank}
                       download
                       to={conceptVideo}
                       className="button button-primary button-wide-mobile button-sm"
@@ -234,8 +235,7 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <Link
-                      target={window}
-                      download
+                      target={_blank}
                       to={lowfiSlidesPDF}
                       className="button button-primary button-wide-mobile button-sm"
                     >
@@ -243,16 +243,14 @@ const FeaturesTiles = ({
                     </Link>{" "}
                     <Link
                       className="button button-wide-mobile button-sm"
-                      target={window}
-                      download
+                      target={_blank}
                       to={lowfiSlidesPPT}
                     >
                       Slides (PPT)
                     </Link>
                     <div style={{ marginTop: "5px" }}></div>
                     <Link
-                      target={window}
-                      download
+                      target={_blank}
                       to={lowfiReport}
                       className="button button-dark button-wide-mobile button-sm"
                     >
@@ -286,7 +284,7 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <a
-                      target={window}
+                      target={_blank}
                       href={
                         "https://www.figma.com/proto/eAv4HLpIQ71M41yw0tIEKb/WageBase?node-id=4%3A36&scaling=scale-down-width"
                       }
@@ -296,25 +294,22 @@ const FeaturesTiles = ({
                     </a>{" "}
                     <Link
                       className="button button-dark button-wide-mobile button-sm"
-                      target={window}
-                      download
-                      to={lowfiSlidesPPT}
+                      target={_blank}
+                      to={medfiREADME}
                     >
                       README
                     </Link>
                     <div style={{ marginTop: "5px" }}></div>
                     <Link
-                      target={window}
-                      download
-                      to={lowfiReport}
+                      target={_blank}
+                      to={medfiSlidesPDF}
                       className="button button-primary button-wide-mobile button-sm"
                     >
                       Slides (PDF)
                     </Link>{" "}
                     <Link
-                      target={window}
-                      download
-                      to={lowfiReport}
+                      target={_blank}
+                      to={medfiSlidesPPT}
                       className="button button-wide-mobile button-sm"
                     >
                       Slides (PPT)
