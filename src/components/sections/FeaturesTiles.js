@@ -104,7 +104,7 @@ const FeaturesTiles = ({
                     </Link>{" "}
                     <Link
                       to={needfindingSlidesPPT}
-                      target={_blank}
+                      target="_blank"
                       className="button button-wide-mobile button-sm"
                     >
                       Slides (PPT)
@@ -145,7 +145,7 @@ const FeaturesTiles = ({
                     </Link>{" "}
                     <Link
                       className="button button-wide-mobile button-sm"
-                      target={_blank}
+                      target="_blank"
                       to={experienceprototypeSlidesPPT}
                     >
                       Slides (PPT)
@@ -200,7 +200,7 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <Link
-                      target={_blank}
+                      target="_blank"
                       download
                       to={conceptVideo}
                       className="button button-primary button-wide-mobile button-sm"
@@ -235,7 +235,7 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <Link
-                      target={_blank}
+                      target="_blank"
                       to={lowfiSlidesPDF}
                       className="button button-primary button-wide-mobile button-sm"
                     >
@@ -243,14 +243,14 @@ const FeaturesTiles = ({
                     </Link>{" "}
                     <Link
                       className="button button-wide-mobile button-sm"
-                      target={_blank}
+                      target="_blank"
                       to={lowfiSlidesPPT}
                     >
                       Slides (PPT)
                     </Link>
                     <div style={{ marginTop: "5px" }}></div>
                     <Link
-                      target={_blank}
+                      target="_blank"
                       to={lowfiReport}
                       className="button button-dark button-wide-mobile button-sm"
                     >
@@ -284,7 +284,7 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <a
-                      target={_blank}
+                      target="_blank"
                       href={
                         "https://www.figma.com/proto/eAv4HLpIQ71M41yw0tIEKb/WageBase?node-id=4%3A36&scaling=scale-down-width"
                       }
@@ -294,21 +294,21 @@ const FeaturesTiles = ({
                     </a>{" "}
                     <Link
                       className="button button-dark button-wide-mobile button-sm"
-                      target={_blank}
+                      target="_blank"
                       to={medfiREADME}
                     >
                       README
                     </Link>
                     <div style={{ marginTop: "5px" }}></div>
                     <Link
-                      target={_blank}
+                      target="_blank"
                       to={medfiSlidesPDF}
                       className="button button-primary button-wide-mobile button-sm"
                     >
                       Slides (PDF)
                     </Link>{" "}
                     <Link
-                      target={_blank}
+                      target="_blank"
                       to={medfiSlidesPPT}
                       className="button button-wide-mobile button-sm"
                     >
