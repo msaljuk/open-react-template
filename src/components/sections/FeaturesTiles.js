@@ -105,7 +105,7 @@ const FeaturesTiles = ({
                     <Link
                       to={needfindingSlidesPPT}
                       target="_blank"
-                      className="button button-wide-mobile button-sm"
+                      className="button button-secondary button-wide-mobile button-sm"
                     >
                       Slides (PPT)
                     </Link>
@@ -144,7 +144,7 @@ const FeaturesTiles = ({
                       Slides (PDF)
                     </Link>{" "}
                     <Link
-                      className="button button-wide-mobile button-sm"
+                      className="button button-secondary button-wide-mobile button-sm"
                       target="_blank"
                       to={experienceprototypeSlidesPPT}
                     >
@@ -199,13 +199,20 @@ const FeaturesTiles = ({
                     will help accomplish
                   </p>
                   <div style={{ marginTop: "20px" }}>
+                    <a
+                      target="_blank"
+                      href={"https://youtu.be/zSrhYK_9txg"}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Watch Online
+                    </a>{" "}
                     <Link
                       target="_blank"
                       download
                       to={conceptVideo}
-                      className="button button-primary button-wide-mobile button-sm"
+                      className="button button-secondary button-wide-mobile button-sm"
                     >
-                      Download Video
+                      Download
                     </Link>
                   </div>
                 </div>
@@ -242,7 +249,7 @@ const FeaturesTiles = ({
                       Slides (PDF)
                     </Link>{" "}
                     <Link
-                      className="button button-wide-mobile button-sm"
+                      className="button button-secondary button-wide-mobile button-sm"
                       target="_blank"
                       to={lowfiSlidesPPT}
                     >
@@ -283,23 +290,6 @@ const FeaturesTiles = ({
                     of the prototype on Figma. <br />
                   </p>
                   <div style={{ marginTop: "20px" }}>
-                    <a
-                      target="_blank"
-                      href={
-                        "https://www.figma.com/proto/eAv4HLpIQ71M41yw0tIEKb/WageBase?node-id=4%3A36&scaling=scale-down-width"
-                      }
-                      className="button button-secondary button-wide-mobile button-sm"
-                    >
-                      Figma Prototype
-                    </a>{" "}
-                    <Link
-                      className="button button-dark button-wide-mobile button-sm"
-                      target="_blank"
-                      to={medfiREADME}
-                    >
-                      README
-                    </Link>
-                    <div style={{ marginTop: "5px" }}></div>
                     <Link
                       target="_blank"
                       to={medfiSlidesPDF}
@@ -310,10 +300,207 @@ const FeaturesTiles = ({
                     <Link
                       target="_blank"
                       to={medfiSlidesPPT}
-                      className="button button-wide-mobile button-sm"
+                      className="button button-secondary button-wide-mobile button-sm"
                     >
                       Slides (PPT)
                     </Link>{" "}
+                    <div style={{ marginTop: "5px" }}></div>
+                    <a
+                      target="_blank"
+                      href={
+                        "https://www.figma.com/proto/eAv4HLpIQ71M41yw0tIEKb/WageBase?node-id=4%3A36&scaling=scale-down-width"
+                      }
+                      className="button button-success button-wide-mobile button-sm"
+                    >
+                      Figma Prototype
+                    </a>{" "}
+                    <Link
+                      className="button button-dark button-wide-mobile button-sm"
+                      target="_blank"
+                      to={medfiREADME}
+                    >
+                      README
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div
+                    className="features-tiles-item-image mb-16"
+                    style={{ width: 64, height: 64, paddingLeft: "5px" }}
+                  >
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-07.svg")}
+                      alt="Features tile icon 07"
+                      width={"40%"}
+                      height={"40%"}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Group Heuristic Evaluation</h4>
+                  <p className="m-0 text-sm">
+                    Expert testing involving Nielsen's heuristics being applied
+                    to evaluate our med-fi prototype
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <a
+                      target="_blank"
+                      href={
+                        "https://drive.google.com/file/d/19Ogb5jgtqcudNMs5WIgVJLZ46VrMBAxW/view?usp=sharing"
+                      }
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Report (PDF)
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div
+                    className="features-tiles-item-image mb-16"
+                    style={{ width: 64, height: 64, paddingLeft: "5px" }}
+                  >
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-08.svg")}
+                      alt="Features tile icon 08"
+                      width={"50%"}
+                      height={"60%"}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Hi-fi Prototype</h4>
+                  <p className="m-0 text-sm">
+                    Used feedback from heuristic evaluation to refine design and
+                    built an interactive prototype in React
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <a
+                      // target="_blank"
+                      // href={""}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Watch Demo
+                    </a>{" "}
+                    <Link
+                      // target="_blank"
+                      // download
+                      // to={demoVideo}
+                      className="button button-secondary button-wide-mobile button-sm"
+                    >
+                      Download
+                    </Link>
+                    <a
+                      // target="_blank"
+                      // href={""}
+                      className="button button-success button-wide-mobile button-sm"
+                      style={{ marginTop: "5px" }}
+                    >
+                      Use Prototype
+                    </a>{" "}
+                    <Link
+                      className="button button-dark button-wide-mobile button-sm"
+                      // target="_blank"
+                      // to={medfiREADME}
+                    >
+                      README
+                    </Link>
+                    <div style={{ marginTop: "5px" }}>
+                      <a
+                        // target="_blank"
+                        // href={""}
+                        className="button button-dark button-wide-mobile button-sm"
+                        style={{ width: "90%" }}
+                      >
+                        Report (PDF)
+                      </a>{" "}
+                    </div>
+                    <div style={{ marginTop: "5px" }}>
+                      <Link
+                        //  target="_blank"
+                        //  to={medfiSlidesPDF}
+                        className="button button-dark button-wide-mobile button-sm"
+                        style={{ width: "90%" }}
+                      >
+                        Midway Milestone Slides (PPT)
+                      </Link>{" "}
+                    </div>
+                    <div style={{ marginTop: "5px" }}>
+                      <Link
+                        //  target="_blank"
+                        //  to={medfiSlidesPDF}
+                        className="button button-dark button-wide-mobile button-sm"
+                        style={{ width: "90%" }}
+                      >
+                        Midway Milestone Slides (PDF)
+                      </Link>{" "}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div
+                    className="features-tiles-item-image mb-16"
+                    style={{ width: 64, height: 64, paddingRight: "2px" }}
+                  >
+                    <Image
+                      src={require("./../../assets/images/feature-tile-icon-09.svg")}
+                      alt="Features tile icon 09"
+                      width={"50%%"}
+                      height={"50%"}
+                    />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">Poster & Pitch Slide</h4>
+                  <p className="m-0 text-sm">
+                    Created a poster and 30-sec pitch slide to present WageBase
+                    to interested parties <br />
+                  </p>
+                  <div style={{ marginTop: "20px" }}>
+                    <Link
+                      // target="_blank"
+                      // to={medfiSlidesPDF}
+                      className="button button-primary button-wide-mobile button-sm"
+                    >
+                      Slide (PDF)
+                    </Link>{" "}
+                    <Link
+                      // target="_blank"
+                      // to={medfiSlidesPPT}
+                      className="button button-secondary button-wide-mobile button-sm"
+                    >
+                      Slide (PPT)
+                    </Link>{" "}
+                    <div style={{ marginTop: "5px" }}>
+                      <a
+                        // target="_blank"
+                        // href={""}
+                        className="button button-dark button-wide-mobile button-sm"
+                        style={{ width: "90%" }}
+                      >
+                        Poster
+                      </a>{" "}
+                    </div>
                   </div>
                 </div>
               </div>

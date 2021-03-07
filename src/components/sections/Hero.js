@@ -7,6 +7,8 @@ import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 
+import invertedLogo from "../../assets/images/invertedlogo.svg";
+
 const propTypes = {
   ...SectionProps.types,
 };
@@ -57,12 +59,13 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1
+            <div
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Wage<span className="text-color-primary">Base</span>
-            </h1>
+              {/* Wage<span className="text-color-primary">Base</span> */}
+              <img src={invertedLogo} style={{ width: "50%" }}></img>
+            </div>
             <div className="container-xs">
               <p
                 className="m-0 mb-32 reveal-from-bottom"
@@ -71,23 +74,18 @@ const Hero = ({
                 Democratizing service worker wage information
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
-                <Link smooth to="#process" className="button button-primary">
-                  Our Process
-                </Link>
-                {/* <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#process">
-                    Our Process
-                  </Button>
-
-                  <Button
-                    tag="a"
-                    color="dark"
-                    wideMobile
-                    href="https://github.com/cruip/open-react-template/"
+                <ButtonGroup>
+                  <Link to="#platform" smooth className="button button-primary">
+                    Our Platform
+                  </Link>
+                  <Link
+                    to="#process"
+                    smooth
+                    className="button button-secondary"
                   >
-                    The Process
-                  </Button>
-                </ButtonGroup> */}
+                    Our Process
+                  </Link>
+                </ButtonGroup>
               </div>
             </div>
           </div>

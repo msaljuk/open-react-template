@@ -1,1 +1,13 @@
-<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path stroke="#FFF" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924"/><path d="M43 42h-9M43 37h-9" stroke="#ACADFF"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:square;}
+	.st1{fill:none;stroke:#28AFB0;stroke-width:2;stroke-linecap:square;}
+</style>
+<g>
+	<path class="st0" d="M30,39.3l-4.2,2.2l1.2-6.9l-5-4.9l6.9-1l3.1-6.3l3.1,6.3l6.9,1l-3,2.9"/>
+	<path class="st1" d="M43,42h-9 M43,37h-9"/>
+</g>
+</svg>

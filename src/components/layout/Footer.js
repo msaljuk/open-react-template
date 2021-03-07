@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Logo from "./partials/Logo";
-import FooterNav from "./partials/FooterNav";
-import FooterSocial from "./partials/FooterSocial";
+// import FooterNav from "./partials/FooterNav";
+// import FooterSocial from "./partials/FooterSocial";
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -33,11 +33,12 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
         >
           <div className="footer-top space-between text-xxs">
             <Logo />
-            <FooterSocial />
+            {/* <FooterSocial /> */}
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
-            <FooterNav />
-            <div className="footer-copyright">WageBase - CS147 Winter 2021</div>
+            {/* <FooterNav /> */}
+            <p>WageBase - All Rights Reserved 2021</p>
+            <div className="footer-copyright">CS147 Winter 2021</div>
           </div>
         </div>
       </div>
