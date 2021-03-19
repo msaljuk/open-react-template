@@ -117,6 +117,33 @@ const Hero = ({
             videoTag="iframe"
           />
         </div>
+        <div
+          className="hero-figure reveal-from-bottom illustration-element-01"
+          data-reveal-value="20px"
+          data-reveal-delay="800"
+        >
+          <a
+            data-video="https://drive.google.com/file/d/1G1i6m4S38LVAZfJO6KS9PKsNEyeObQv3/preview"
+            href="#0"
+            aria-controls="video-modal"
+            onClick={openModal}
+          >
+            <Image
+              className="has-shadow"
+              src={require("./../../assets/images/demoVideoPlaceholder.png")}
+              alt="Hero"
+              width={896}
+              height={504}
+            />
+          </a>
+        </div>
+        <Modal
+          id="video-modal"
+          show={videoModalActive}
+          handleClose={closeModal}
+          video="https://drive.google.com/file/d/1G1i6m4S38LVAZfJO6KS9PKsNEyeObQv3/preview"
+          videoTag="iframe"
+        />
       </div>
     </section>
   );
