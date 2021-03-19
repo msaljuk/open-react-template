@@ -26,6 +26,16 @@ import medfiSlidesPDF from "../../assets/assignments/medfiSlides.pdf";
 import medfiSlidesPPT from "../../assets/assignments/medfiSlides.pptx";
 import medfiREADME from "../../assets/assignments/medfiREADME.pdf";
 
+// hi-fi prototype deliverables
+import hifiDemo from "../../assets/assignments/hifidemo.mov";
+import midwayPDF from "../../assets/assignments/midwaymilestone.pdf";
+import midwayPPT from "../../assets/assignments/midwaymilestone.pptx";
+
+// poster and slide deliverables
+import presslidePDF from "../../assets/assignments/presslide.pdf";
+import presslidePPT from "../../assets/assignments/presslide.pptx";
+import poster from "../../assets/assignments/poster.png";
+
 const propTypes = {
   ...SectionTilesProps.types,
 };
@@ -388,23 +398,25 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <a
-                      // target="_blank"
-                      // href={""}
+                      target="_blank"
+                      href={
+                        "https://drive.google.com/file/d/1G1i6m4S38LVAZfJO6KS9PKsNEyeObQv3/view?usp=sharing"
+                      }
                       className="button button-primary button-wide-mobile button-sm"
                     >
                       Watch Demo
                     </a>{" "}
                     <Link
-                      // target="_blank"
-                      // download
-                      // to={demoVideo}
+                      target="_blank"
+                      download
+                      to={hifiDemo}
                       className="button button-secondary button-wide-mobile button-sm"
                     >
                       Download
                     </Link>
                     <a
-                      // target="_blank"
-                      // href={""}
+                      target="_blank"
+                      href={"https://wagebase.netlify.app/"}
                       className="button button-success button-wide-mobile button-sm"
                       style={{ marginTop: "5px" }}
                     >
@@ -419,6 +431,16 @@ const FeaturesTiles = ({
                     </Link>
                     <div style={{ marginTop: "5px" }}>
                       <a
+                        target="_blank"
+                        href={"https://github.com/girishbarca/Wagebase"}
+                        className="button button-dark button-wide-mobile button-sm"
+                        style={{ width: "90%" }}
+                      >
+                        Prototype Github (.zip)
+                      </a>{" "}
+                    </div>
+                    <div style={{ marginTop: "5px" }}>
+                      <a
                         // target="_blank"
                         // href={""}
                         className="button button-dark button-wide-mobile button-sm"
@@ -429,22 +451,22 @@ const FeaturesTiles = ({
                     </div>
                     <div style={{ marginTop: "5px" }}>
                       <Link
-                        //  target="_blank"
-                        //  to={medfiSlidesPDF}
-                        className="button button-dark button-wide-mobile button-sm"
-                        style={{ width: "90%" }}
-                      >
-                        Midway Milestone Slides (PPT)
-                      </Link>{" "}
-                    </div>
-                    <div style={{ marginTop: "5px" }}>
-                      <Link
-                        //  target="_blank"
-                        //  to={medfiSlidesPDF}
+                        target="_blank"
+                        to={midwayPDF}
                         className="button button-dark button-wide-mobile button-sm"
                         style={{ width: "90%" }}
                       >
                         Midway Milestone Slides (PDF)
+                      </Link>{" "}
+                    </div>
+                    <div style={{ marginTop: "5px" }}>
+                      <Link
+                        target="_blank"
+                        to={midwayPPT}
+                        className="button button-dark button-wide-mobile button-sm"
+                        style={{ width: "90%" }}
+                      >
+                        Midway Milestone Slides (PPT)
                       </Link>{" "}
                     </div>
                   </div>
@@ -478,28 +500,28 @@ const FeaturesTiles = ({
                   </p>
                   <div style={{ marginTop: "20px" }}>
                     <Link
-                      // target="_blank"
-                      // to={medfiSlidesPDF}
+                      target="_blank"
+                      to={presslidePDF}
                       className="button button-primary button-wide-mobile button-sm"
                     >
                       Slide (PDF)
                     </Link>{" "}
                     <Link
-                      // target="_blank"
-                      // to={medfiSlidesPPT}
+                      target="_blank"
+                      to={presslidePPT}
                       className="button button-secondary button-wide-mobile button-sm"
                     >
                       Slide (PPT)
                     </Link>{" "}
                     <div style={{ marginTop: "5px" }}>
-                      <a
-                        // target="_blank"
-                        // href={""}
+                      <Link
+                        target="_blank"
+                        to={poster}
                         className="button button-dark button-wide-mobile button-sm"
-                        style={{ width: "90%" }}
+                        style={{ width: "85%" }}
                       >
                         Poster
-                      </a>{" "}
+                      </Link>{" "}
                     </div>
                   </div>
                 </div>
