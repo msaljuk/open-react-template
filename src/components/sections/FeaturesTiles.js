@@ -28,6 +28,8 @@ import medfiREADME from "../../assets/assignments/medfiREADME.pdf";
 
 // hi-fi prototype deliverables
 import hifiDemo from "../../assets/assignments/hifidemo.mov";
+import hifiReadme from "../../assets/assignments/hifiReadme.pdf";
+import finalReport from "../../assets/assignments/finalReport.pdf";
 import midwayPDF from "../../assets/assignments/midwaymilestone.pdf";
 import midwayPPT from "../../assets/assignments/midwaymilestone.pptx";
 
@@ -424,8 +426,8 @@ const FeaturesTiles = ({
                     </a>{" "}
                     <Link
                       className="button button-dark button-wide-mobile button-sm"
-                      // target="_blank"
-                      // to={medfiREADME}
+                      target="_blank"
+                      to={hifiReadme}
                     >
                       README
                     </Link>
@@ -440,14 +442,14 @@ const FeaturesTiles = ({
                       </a>{" "}
                     </div>
                     <div style={{ marginTop: "5px" }}>
-                      <a
-                        // target="_blank"
-                        // href={""}
+                      <Link
+                        target="_blank"
+                        to={finalReport}
                         className="button button-dark button-wide-mobile button-sm"
                         style={{ width: "90%" }}
                       >
-                        Report (PDF)
-                      </a>{" "}
+                        Final Report (PDF)
+                      </Link>{" "}
                     </div>
                     <div style={{ marginTop: "5px" }}>
                       <Link
